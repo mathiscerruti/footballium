@@ -1,0 +1,28 @@
+<head>
+  <title> Menu Pong </title>
+  <style>
+h1 {font-size: 32px ;text-align: center;}
+p {text-align: center;}
+</style>
+</head>
+
+<body>
+  
+  <h1>Pong Spécial Coupe du Monde</h1>
+  
+  <p>
+    <label for="sélection_match">Choissisez un match :</label><br />
+  <select name="match" id="match" onChange="gotoLien(this.value)">
+  <option value=" choix 0"> Choisissez... </option>
+   <option value="jeu_BA.html"> Brésil - Argentine </option>
+   <option value="jeu_FA.html"> France - Angleterre </option>
+  </select>
+  </p>
+
+  <script type="text/javascript">
+function gotoLien(lien){
+	window.location = lien;
+}
+</script>
+  
+</body>

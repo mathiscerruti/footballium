@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Pronos</title>
+  <link href="feuilles_de_style/style_prono.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h1>Jeu de pronostic</h1>
+  
+  <h2>Devinez le score d'un match que vous n'avez pas vu !</h2>
+
+  <h3> 
+  Match 1 : Corée du Sud - Brésil 
+  </h3>
+
+  <div class="form">
+    <label for="guessField1">Votre prono: </label>
+    <input type="number" min="1" max="100" required id="guessField1" class="guessField1" placeholder="Score du Brésil">
+    <input type="number" min="1" max="100" required id="guessField2" class="guessField2" placeholder="Score de la Corée du Sud">
+    <input type="submit" value="Go" class="guessSubmit">
+  </div>
+
+  <div class="resultParas">
+    <p class="guesses1"></p>
+    <p class="lastResult1"></p>
+    <p class="lowOrHi1"></p>
+  </div>
+
+  <div class="resultParas">
+    <p class="guesses2"></p>
+    <p class="lastResult2"></p>
+    <p class="lowOrHi2"></p>
+  </div>
+  
+  <h4> Un match chaque semaine !</h4>
+ 
+  <script src="scripts/script_prono.js"></script>
+
+  
+</body>
+
+</html>
